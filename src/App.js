@@ -4,6 +4,9 @@ import Welcome from './component/Welcome'
 import Hello from './component/Hello'
 import Message from './component/Message'
 import Counter from './component/Counter'
+import FunctionClick from './component/FunctionClick'
+import ClassClick from './component/ClassClick'
+import EventBind from './component/EventBind'
 class App extends Component {
     render(){
         return(//so greet can now be like a custom html tag, it's return html after all..
@@ -12,9 +15,13 @@ class App extends Component {
             <Greet name = "Adriel" heroName = "loser">
               <p>This is children props</p> 
               
-            </Greet>{
+            </Greet>
             <Welcome name = "Karen" heroName = "callthemanager"/>
-            /*
+            
+            <FunctionClick />
+            <ClassClick />
+            <EventBind />
+            {/*
             <Greet name = "Karen" heroName = "callthemanager">
                 <button>Action man</button>
             </Greet>
